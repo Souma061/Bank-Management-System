@@ -26,11 +26,7 @@ class CreateUsersTable extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => 255,
             ],
-            'role' => [
-                'type' => 'ENUM',
-                'constraint' => ['customer', 'ops_admin'],
-                'default' => 'customer',
-            ],
+
             'is_active' => [
                 'type' => 'BOOLEAN',
                 'default' => true,
